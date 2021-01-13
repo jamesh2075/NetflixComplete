@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.bluevisionsoftware.NetflixComplete2.DroidTV" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <application android:label="Netflix Complete! v2" android:theme="@style/Theme.Leanback" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:icon="@drawable/icon" android:label="Netflix Complete!" android:name="md537fbc077fbc6d269633e829ef2668ed1.LoginActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:icon="@drawable/icon" android:label="Netflix Complete!" android:name="md537fbc077fbc6d269633e829ef2668ed1.MainActivity" />
+    <activity android:exported="true" android:label="PlayerActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="md537fbc077fbc6d269633e829ef2668ed1.PlayerActivity" />
+    <activity android:label="Video Details" android:name="md537fbc077fbc6d269633e829ef2668ed1.VideoDetailsActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.bluevisionsoftware.NetflixComplete2.DroidTV.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.bluevisionsoftware.NetflixComplete2.DroidTV" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

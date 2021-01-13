@@ -1,0 +1,2 @@
+android.app.Application
+com.bluevisionsoftware.NetflixComplete2.DroidTV

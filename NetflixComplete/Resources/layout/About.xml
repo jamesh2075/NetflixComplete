@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/imageView1"
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp">
+        <TextView
+            android:text="Terms of Use: By using this app, you automatically agree to these terms. THIS IS NOT AN OFFICIAL APP FROM NETFLIX. This app allows you to view thousands of movies from the dozens of categories that are hidden from Netflix's official apps. It allows you to add these hidden movies to your My List for later viewing. You can also open Netflix directly from within the app. This app uses your Netflix e-mail address and password solely for the purposes of browsing the Netflix catalog and adding items to your instant queue. This app was developed over a period of three days with no support from the Netflix team. If you have any suggestions, please e-mail them to the e-mail address below."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            style="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:text="Developer: James Henry / BLUEVISION LLC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+        <TextView
+            android:text="Contact: netflixcomplete@bluevisionsoftware.com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,1 @@
+<fragment android:name="md537fbc077fbc6d269633e829ef2668ed1.AboutFragment" android:id="@+id/about_fragment" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" />

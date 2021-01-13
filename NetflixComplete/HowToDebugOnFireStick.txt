@@ -1,0 +1,23 @@
+﻿Debugging my custom Netflix app on Amazon Firestick
+DATE of this note: 7/26/2017
+===============================================
+1. Make sure the Firestick and the computer running this code are connected to the same network.
+2. On the Firestick, go to Settings->Device->About->Network and write down or remember the IP Address.
+3. On the Firestick, go to Settings->Device->Developer Options and ensure both ADB debugging and Apps from Unknown Sources are enabled.
+   Note: ADB debugging allows you to connect to the Firestick remotely from your computer over TCP/IP. 
+         Apps from Unknown Sources allows you to install apps that are NOT in the Android App Store on the Firestick.
+4. Download and install adbLink.
+5. Run adbLink.
+6. If your Firestick is not listed as a Current device, click New. Otherwise, click Edit.
+7. The IP address specified in the Address field should be the IP address from Step 2.
+8. The port should be 5555. (Note: This allows you to connect to the Firestick via TCP/IP over port 5555).
+9. Click Connect to connect the Firestick.
+10. Within 30 seconds, the connected status should show Connected.
+11. Amazon AFTM should now be listed as a device in Visual Studio. 
+	Note: Make sure the NetflixComplete.DroidTV project is the active one.
+	      If Amazon AFTM is not listed as a device, make sure you have the Google USB Driver package installed in Android SDK Manager.
+12. Build and Deploy NetflixComplete.DroidTV to the device.
+
+NOTE: If adbLink keeps saying its out of date or not working, it could be that there are two different versions of
+      the adb.exe executable on your machine. adbLink could be using one adb.exe, and the Android SDK could be using another.
+	  Copy the one from the Android SDK to the adbLink directory.
