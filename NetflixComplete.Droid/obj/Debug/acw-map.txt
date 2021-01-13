@@ -1,4 +1,0 @@
-NetflixComplete.Droid.MainActivity, NetflixComplete.Droid;md5c103067abd7bc1dbf19334a4fe196095.MainActivity
-NetflixComplete.Droid.MainActivity, NetflixComplete.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c103067abd7bc1dbf19334a4fe196095.MainActivity
-NetflixComplete.Droid.MainActivity;md5c103067abd7bc1dbf19334a4fe196095.MainActivity
-netflixcomplete.droid.MainActivity;md5c103067abd7bc1dbf19334a4fe196095.MainActivity
